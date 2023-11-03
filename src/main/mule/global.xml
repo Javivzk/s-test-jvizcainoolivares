@@ -6,7 +6,7 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
     </http:listener-config>
     <apikit:config name="s-test-jvizcainoolivares-config" api="resource::08bd7d47-9ba0-4e5e-be63-5938d02ae61e:s-test-jvizcainoolivares:1.0.0:raml:zip:s-test-jvizcainoolivares.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" doc:name="s-test-jvizcainoolivares-config"/>
     <configuration-properties doc:name="Configuration properties" doc:id="17fe1ac6-85c0-443d-8ba4-8a544e688619" file="properties/${env}-secure-config.yaml" />
-    <global-property doc:name="Global Property" doc:id="6754301b-af1e-4f91-8c4a-8b388fc20b20" name="env" value="local" />
+    <global-property doc:name="Global Property" doc:id="6754301b-af1e-4f91-8c4a-8b388fc20b20" name="env" value="pre" />
     <secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="944262c2-f9a2-41ac-8437-51636a4fc285" file="properties/${env}-secure-config.yaml" key="${key}">
         <secure-properties:encrypt algorithm="Blowfish" />
     </secure-properties:config>
