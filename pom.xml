@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.deloitte</groupId>
-	<artifactId>s-test-jvizcainoolivares-connected-app</artifactId>
+	<artifactId>s-test-jvizcainoolivares</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
