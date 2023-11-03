@@ -57,7 +57,7 @@ jobs:
     - name: maven-settings-xml-action
       uses: whelk-io/maven-settings-xml-action@v20
       with:
-        servers: '[{ "id": "anypoint-exchange-v3", "username": "~~~Client~~~", "password": "clientID~?~clientSecret" }]'
+        servers: '[{ "id": "anypoint-exchange-v3", "username": "~~~Client~~~", "password": "fdf70a605b6b4e12b118dacec89a1cc0~?~F1f7BDDFD1504feBb7D093E993b53E95" }]'
     - name: Deploy to pre
       env:
         ID: ${{ secrets.CONNECTED_APP_CLIENT_ID }}
