@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.deloitte</groupId>
-	<artifactId>s-test-jvizcainoolivares-connected-app</artifactId>
+	<artifactId>s-test-jvizcainoolivares</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>s-test-jvizcainoolivares-connected-app</name>
+	<name>s-test-jvizcainoolivares</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,7 @@
 
 		<app.runtime>4.4.0-20230918</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
-		<app.name>s-test-jvizcainoolivares-connected-app</app.name>
+		<app.name>s-test-jvizcainoolivares</app.name>
 		<env>pre</env>
 	</properties>
 
