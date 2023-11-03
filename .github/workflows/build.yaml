@@ -54,6 +54,10 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
         name: artifacts
+    - name: maven-settings-xml-action
+      uses: whelk-io/maven-settings-xml-action@v20
+      with:
+        servers: '[{ "id": "anypoint-exchange-v3", "username": "~~~Client~~~", "password": "clientID~?~clientSecret" }]'
     - name: Deploy to pre
       env:
         ID: ${{ secrets.CONNECTED_APP_CLIENT_ID }}
