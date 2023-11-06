@@ -27,7 +27,7 @@ jobs:
     - name: maven-settings-xml-action
       uses: whelk-io/maven-settings-xml-action@v20
       with:
-        servers: '[{ "id": "anypoint-exchange-v3", "username": "secret.ANYPOINT_PLATFORM_USERNAME", "password": "secret.ANYPOINT_PLATFORM_PASSWORD" }]'
+        servers: '[{ "id": "anypoint-exchange-v3", "username": "secrets.ANYPOINT_PLATFORM_USERNAME", "password": "secrets.ANYPOINT_PLATFORM_PASSWORD" }]'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Stamp artifact file name with commit hash
