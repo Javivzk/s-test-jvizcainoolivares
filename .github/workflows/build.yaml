@@ -63,6 +63,8 @@ jobs:
         ID: ${{ secrets.CONNECTED_APP_CLIENT_ID }}
         SECRET: ${{ secrets.CONNECTED_APP_CLIENT_SECRET }}
         KEY: ${{ secrets.decryption_key}}
+        USERNAME: ${{ secrets.ANYPOINT_PLATFORM_USERNAME}}
+        PASSWORD: ${{ secrets.ANYPOINT_PLATFORM_PASSWORD }}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DskipMunitTests -DmuleDeploy \
