@@ -59,14 +59,10 @@ jobs:
         USERNAME: ${{ secrets.anypoint_platform_username }}
         PASSWORD: ${{ secrets.anypoint_platform_password }}
         KEY: ${{ secrets.decryption_key}}
-        CLIENT_ID: ${{ secrets.anypoint_platform_client_id}}
-        CLIENT_SECRET: ${{ secrets.anypoint_platform_client_secret}}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy \
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
          -Danypoint.password="$PASSWORD" \
-         -Ddecryption.key="$KEY" \
-         -Dclient.id="$CLIENT_ID" \
-         -Dclient.secret="$CLIENT_SECRET"
+         -Ddecryption.key="$KEY" 
