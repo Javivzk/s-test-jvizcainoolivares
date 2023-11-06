@@ -1,4 +1,4 @@
-name: Build and Deploy to pre
+name: Build and Deploy to pre branch
 
 on:
   push:
