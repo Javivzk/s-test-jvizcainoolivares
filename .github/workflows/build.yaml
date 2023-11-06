@@ -12,10 +12,6 @@ jobs:
     steps:
     - name: Checkout this repo
       uses: actions/checkout@v3
-    - name: maven-settings-xml-action
-      uses: whelk-io/maven-settings-xml-action@v20
-      with:
-        servers: '[{ "id": "anypoint-exchange-v3", "username": "~~~Client~~~", "password": "fdf70a605b6b4e12b118dacec89a1cc0~?~F1f7BDDFD1504feBb7D093E993b53E95" }]'
     - name: Cache dependencies
       uses: actions/cache@v3
       with:
@@ -29,7 +25,7 @@ jobs:
         distribution: 'zulu'
         java-version: 8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -s /home/runner/.m2/settings.xml
+      run: mvn -B package --file pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
@@ -60,13 +56,11 @@ jobs:
         name: artifacts
     - name: Deploy to pre
       env:
-        ID: ${{ secrets.CONNECTED_APP_CLIENT_ID }}
-        SECRET: ${{ secrets.CONNECTED_APP_CLIENT_SECRET }}
-        KEY: ${{ secrets.decryption_key }}
+        USERNAME: ${{ secrets.anypoint_platform_username }}
+        PASSWORD: ${{ secrets.anypoint_platform_password }}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy \
          -Dmule.artifact=$artifactName \
-         -Dclient.id="$ID" \
-         -Dclient.secret="$SECRET" \
-         -Ddecryption.key="$KEY"
+         -Danypoint.username="$USERNAME" \
+         -Danypoint.password="$PASSWORD" 
