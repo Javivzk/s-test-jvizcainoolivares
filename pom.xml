@@ -31,7 +31,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
 						<applicationName>s-test-jvizcainoolivares</applicationName>
-						<environment>Sandbox</environment>
+						<environment>pre</environment>
 						<workerType>MICRO</workerType>
 						<region>us-east-2</region>
 						<workers>1</workers>
