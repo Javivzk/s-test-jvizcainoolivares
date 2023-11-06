@@ -59,9 +59,9 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>d18d1e51-61ab-4cce-b91a-886042352464</groupId>
+			<groupId>08bd7d47-9ba0-4e5e-be63-5938d02ae61e</groupId>
 			<artifactId>s-test-jvizcainoolivares</artifactId>
-			<version>1.0.2</version>
+			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
 		</dependency>
