@@ -24,8 +24,12 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: 8
+    - name: maven-settings-xml-action 
+      uses: whelk-io/maven-settings-xml-action@v20
+      with:
+        servers: '[{ "id": "Repository", "username": "~~~Client~~~", "password": "0dddb514dbef44fdb22535f6e666360b~?~558FA56A20924B838AD3b3dB26549356" }]'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package -s /home/runner/.m2/settings.xml --file pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
