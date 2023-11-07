@@ -40,7 +40,7 @@
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<anypointPlatformClientId>${any.client.id}</anypointPlatformClientId>
-						<anypointPlatformClientSecret>{any.client.secret}</anypointPlatformClientSecret>
+						<anypointPlatformClientSecret>${any.client.secret}</anypointPlatformClientSecret>
 						<anypointPlatformBaseUri></anypointPlatformBaseUri>
 						<applicationName>${app.name}</applicationName>
 						<environment>${env}</environment>
