@@ -72,5 +72,5 @@ jobs:
          -Dclient.id="$ID" \
          -Dclient.secret="$SECRET" \
          -Ddecryption.key="$KEY" \
-         -Dany.client.id="$CLIENTID" \
-         -Dany.client.secret="$CLIENTSECRET"
+         -Dap.client.id="${{ secrets.ANYPOINT_PLATFORM_CLIENT_ID }}" \
+         -Dap.client.secret="${{ secrets.ANYPOINT_PLATFORM_CLIENT_SECRET }}"

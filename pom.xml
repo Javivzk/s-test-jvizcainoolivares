@@ -39,9 +39,6 @@
 						<connectedAppClientId>${client.id}</connectedAppClientId>
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<anypointPlatformClientId>${any.client.id}</anypointPlatformClientId>
-						<anypointPlatformClientSecret>${any.client.secret}</anypointPlatformClientSecret>
-						<anypointPlatformBaseUri></anypointPlatformBaseUri>
 						<applicationName>${app.name}</applicationName>
 						<environment>${env}</environment>
 						<workerType>MICRO</workerType>
@@ -49,6 +46,8 @@
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
+							<anypoint.platform.client_id>${ap.client.id}</anypoint.platform.client_id>
+                			<anypoint.platform.client_secret>${ap.client.secret}</anypoint.platform.client_secret>
 							<secure.key>${decryption.key}</secure.key>
 						</properties>
 						<!-- Start: SECURED PROPERTIES CI/CD -->
