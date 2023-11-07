@@ -39,7 +39,7 @@
 						<connectedAppClientId>${client.id}</connectedAppClientId>
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<deploymentTimeout>100000000000</deploymentTimeout> <!-- Aumenta el tiempo en segundos -->
+						<deploymentTimeout>10000000000000000</deploymentTimeout> <!-- Aumenta el tiempo en segundos -->
 						<applicationName>${app.name}</applicationName>
 						<environment>${env}</environment>
 						<workerType>MICRO</workerType>
