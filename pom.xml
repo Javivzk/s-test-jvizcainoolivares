@@ -39,7 +39,9 @@
 						<connectedAppClientId>${client.id}</connectedAppClientId>
 						<connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<deploymentTimeout>10000000000000000</deploymentTimeout> <!-- Aumenta el tiempo en segundos -->
+						<anypointPlatformClientId>${any.client.id}</anypointPlatformClientId>
+						<anypointPlatformClientSecret>{any.client.secret}</anypointPlatformClientSecret>
+						<anypointPlatformBaseUri></anypointPlatformBaseUri>
 						<applicationName>${app.name}</applicationName>
 						<environment>${env}</environment>
 						<workerType>MICRO</workerType>
