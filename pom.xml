@@ -7,7 +7,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>s-test-jvizcainoolivares-git-pre</name>
+	<name>s-test-jvizcainoolivares-git-dev</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,7 @@
 
 		<app.runtime>4.4.0-20230918</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
-		<app.name>s-test-jvizcainoolivares-git-pre</app.name>
+		<app.name>s-test-jvizcainoolivares-git-dev</app.name>
 		<env>dev</env>
 		<munit.version>2.3.13</munit.version>
 	</properties>
